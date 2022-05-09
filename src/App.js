@@ -21,11 +21,13 @@ async function fetchImages() {
 }
 
 export const App = () => {
-  
+  const React = require('react');
   return (
     <main>
-      <Header props=""/>
-      <Description props=""/>
+      <Header/>
+      <Description />
     </main>
   )
 }
+
+export default App;
