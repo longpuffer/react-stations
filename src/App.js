@@ -2,9 +2,10 @@
 
 import * as React from 'react'
 import './App.css'
-import Header from './Header.js'
-import Description from './Description.js'
-
+import {Header} from './Header.js'
+import {Description} from './Description.js'
+import {DogListContainer} from './DogListContainer'
+import {BreedSelect} from './BreedsSelect'
 
 /**
  * 
@@ -16,18 +17,16 @@ async function fetchImages() {
     "https://dog.ceo/api/breeds/image/random"
   );
   const data = await response.json();
-  console.log(data.message);
   return data.message;
 }
 
 export const App = () => {
-  const React = require('react');
   return (
     <main>
       <Header/>
+      <DogListContainer/>
       <Description />
     </main>
   )
 }
 
-export default App;
