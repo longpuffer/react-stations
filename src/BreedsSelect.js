@@ -6,6 +6,7 @@ import * as React from 'react'
 
 export function BreedSelect(props){
   return (
+    <div>
     <select
       onChange={props.change}>
         {
@@ -18,5 +19,7 @@ export function BreedSelect(props){
           })
         }
     </select>
+    <p></p>
+    </div>
 )
 }
